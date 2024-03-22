@@ -30,15 +30,10 @@ A nossa organização será feita de modo que as camadas mais externas não seja
 
    Obs: Um caso de uso pode ser chamado pelo outro?
 
-    Em algumas situações podemos sim chamar outro casos de uso, como por exemplo:
+    Importante analisar a complexidade que vai criar para nosso metodo. Uma abordagem interessante é a gente criar um controller e chamar os casos de usos de maneira independente. Um da cada vez executando tudo que percisamos.
 
-    1- Podemos analisar se podemos ter uma camada de dominio que abstraia as regras de negocio independentes, e reutiliza ela nos casos de usos que fazem sentidos.
-
-    2 - Quando precisamos incorporar um comportamento de outro caso de uso, assim vamos estar evitando a duplicidade de código no nosso sistema.
-
-    3 - Integrações, mas acredito que para o nosso modelo de organização arquitetural esse caso não se aplica, mas em outro design é uma abordagem interessante.
-
-    - Importante analisar a complexidade que ira criar dentro no nosso metodo que esta incorporando outro use case (processamento).
+    Para os casos em que nosso sistema usa repetida vezes o mesmo codigo em varias partes, como por exemplo um log. Não temos por que ficar repetindo codigo se ele executa extamante a mesma coisa.
+    Podemos cria uma um Service, que fique responsavel por gerenciar esse comportamente e reutiliza-lo nso lugares que precisamos.
 
 - **Exceptions**: Ficarão todas as exceções lançadas pelos nossos casos de uso.
 
