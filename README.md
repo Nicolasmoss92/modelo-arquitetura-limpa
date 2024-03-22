@@ -32,9 +32,11 @@ A nossa organização será feita de modo que as camadas mais externas não seja
 
     Em algumas situações podemos sim chamar outro casos de uso, como por exemplo:
 
-    - Quando precisamos incorporar um comportamento de outro caso de uso, assim vamos estar evitando a duplicidade de código no nosso sistema.
+    1- Podemos analisar se podemos ter uma camada de dominio que abstraia as regras de negocio independentes, e reutiliza ela nos casos de usos que fazem sentidos.
 
-    - Integrações, mas acredito que para o nosso modelo de organização arquitetural esse caso não se aplica, mas em outro design é uma abordagem interessante.
+    2 - Quando precisamos incorporar um comportamento de outro caso de uso, assim vamos estar evitando a duplicidade de código no nosso sistema.
+
+    3 - Integrações, mas acredito que para o nosso modelo de organização arquitetural esse caso não se aplica, mas em outro design é uma abordagem interessante.
 
     - Importante analisar a complexidade que ira criar dentro no nosso metodo que esta incorporando outro use case (processamento).
 
