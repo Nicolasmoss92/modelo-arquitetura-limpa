@@ -83,3 +83,6 @@ Também é interessante analisarmos essa imagem para termos uma ideia da estrutu
 Podemos focar na imagem B, onde teríamos um subdomínio (sistema) com vários Bounded Contexts (core, serviços terceiros, consumo de APIs). Todos eles conversando entre si.
 
 Se analisarmos a nível de equipe, também nos dá a liberdade para escalarmos squads/pessoas para trabalharem em diferentes módulos dentro do nosso sistema, de fato, criando uma grande entrega de valor.
+
+
+**Desconsiderar a pasta imagens
