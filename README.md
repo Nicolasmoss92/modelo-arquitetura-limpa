@@ -32,7 +32,7 @@ A nossa organização será feita de modo que as camadas mais externas não seja
 
     É importante analisar a complexidade que isso criará para o nosso método. Uma abordagem interessante é criar um controlador e chamar os casos de uso de maneira independente, um de cada vez, executando tudo o que precisamos.
 
-    Para os casos em que nosso sistema usa repetidamente o mesmo código em várias partes, como por exemplo um log, não temos por que ficar repetindo o código se ele executa exatamente a mesma coisa. Podemos criar um serviço que seja responsável por gerenciar esse comportamento e reutilizá-lo nos lugares em que precisamos
+    Para os casos em que nosso sistema usa repetidamente o mesmo código em várias partes, como por exemplo um log, não temos por que ficar repetindo o código se ele executa exatamente a mesma coisa. Podemos criar um serviço que seja responsável por gerenciar esse comportamento e reutilizá-lo nos lugares em que precisamos.
 
 - **Exceptions**: Ficarão todas as exceções lançadas pelos nossos casos de uso.
 
