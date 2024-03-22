@@ -27,13 +27,14 @@ A nossa organização será feita de modo que as camadas mais externas não seja
 - **Ports**: Responsável por desacoplar o nosso caso de uso com as camadas mais externas. Aqui teremos uma interface que fará um contrato com o repository do nosso projeto. Ou seja, ela conterá todos os métodos utilizados para fazer persistência/busca no banco de dados. Assim, nosso caso de uso não acessará diretamente uma camada mais externa, mas consumirá a interface que faz a comunicação com o banco de dados, utilizando-a através de injeção de dependência. Um bom exemplo da independência que utilizaremos esse contrato nos dá é pensar em alterarmos a tecnologia do banco de dados; neste caso, só vamos precisar alterar a conexão com o banco de dados.
 
 - **UseCases**: Aqui ficará toda nossa regra de negócio. Será o coração da nossa aplicação.
-    Obs: Um caso de uso pode ser chamado pelo outro? 
+
+   Obs: Um caso de uso pode ser chamado pelo outro?
 
     Em algumas situações podemos sim chamar outro casos de uso, como por exemplo:
 
-        - Quando precimos incorporar um comportamento de outro caso de uso, assim vamos estar evitando a duplicidade de codigo no nosso sistema.
+    - Quando precisamos incorporar um comportamento de outro caso de uso, assim vamos estar evitando a duplicidade de código no nosso sistema.
 
-        - Integrações, mas acredito que para o nosso modelo de organização arquitetural esse caso não se aplica, mas em outro designer é uma abordagem interessante. 
+    - Integrações, mas acredito que para o nosso modelo de organização arquitetural esse caso não se aplica, mas em outro design é uma abordagem interessante.
 
 - **Exceptions**: Ficarão todas as exceções lançadas pelos nossos casos de uso.
 
