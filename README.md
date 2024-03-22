@@ -57,3 +57,29 @@ Observação: Cada design pode conter uma organização em relação a alguns it
 - **Exceptions**: Podemos deixar junto com suas respectivas camadas.
 
 Ao implementar uma aplicação, pense nas suas Entidades, que são classes que armazenam principalmente dados e que poderão ser reusadas em outros sistemas que você vai construir no futuro. Depois, pense nos Casos de Uso, que vão implementar regras de negócio relacionadas com as Entidades de seu sistema. Mas torne as classes que representam Entidades e Casos de Uso limpas de qualquer tecnologia. Lembre-se a Web é um detalhe; o banco de dados é um detalhe. Por fim, pense nas classes Adaptadoras, que vão funcionar como tradutores que viabilizam a comunicação entre as classes internas e o mundo externo.
+
+
+## Análise da Estrutura de Pastas e Design de Domínio Dirigido (DDD)
+
+Ao analisar a estrutura de pastas, também podemos fazer uma análise sobre o Design de Domínio Dirigido (DDD). Com a seguinte imagem:
+
+![DDD](/imagens/Screenshot_166.png)
+
+### Core
+Como mencionado anteriormente, é a camada mais interna da aplicação, onde se concentra a camada de maior valor do software.
+
+### Supporting
+Supporting, algo que dá suporte ao Core e é de grande valor para o negócio.
+
+### Generic 
+É o que demanda muito trabalho; podemos tentar evitá-lo e deixá-lo para uma possível integração ou para que outra empresa forneça.
+
+Se pararmos para analisar o Supporting e o Generic, podemos ver que a organização de arquitetura que criamos nos trará muita independência caso nos deparemos com uma situação que necessite de muito tempo de trabalho da equipe e complexidade. Isso nos dará independência para contratarmos um serviço de terceiros ou criar uma integração para consumir uma API. Nos deixará livres para trabalhar no core do negócio e fazer uma entrega de maior valor para nosso cliente.
+
+Também é interessante analisarmos essa imagem para termos uma ideia da estruturação do todo, arquitetura, micro serviços e a liberdade de integração sem comprometer nossa estrutura:
+
+![DDD_1](/imagens/Screenshot_167.png)
+
+Podemos focar na imagem B, onde teríamos um subdomínio (sistema) com vários Bounded Contexts (core, serviços terceiros, consumo de APIs). Todos eles conversando entre si.
+
+Se analisarmos a nível de equipe, também nos dá a liberdade para escalarmos squads/pessoas para trabalharem em diferentes módulos dentro do nosso sistema, de fato, criando uma grande entrega de valor.
