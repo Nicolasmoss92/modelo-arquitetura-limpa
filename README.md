@@ -26,7 +26,7 @@ A nossa organização será feita de modo que as camadas mais externas não seja
 
 - **Ports**: Responsável por desacoplar o nosso caso de uso com as camadas mais externas. Aqui teremos uma interface que fará um contrato com o repository do nosso projeto. Ou seja, ela conterá todos os métodos utilizados para fazer persistência/busca no banco de dados. Assim, nosso caso de uso não acessará diretamente uma camada mais externa, mas consumirá a interface que faz a comunicação com o banco de dados, utilizando-a através de injeção de dependência. Um bom exemplo da independência que utilizaremos esse contrato nos dá é pensar em alterarmos a tecnologia do banco de dados; neste caso, só vamos precisar alterar a conexão com o banco de dados.
 
-- **UseCases**: Aqui ficará toda nossa regra de negócio. Será o coração da nossa aplicação. Nesse design, podemos criar os testes unitários aqui dentro e também as interfaces dos nossos casos de uso que irão assim o contrato com o arquivo ports.
+- **UseCases**: Aqui ficará toda nossa regra de negócio. Será o coração da nossa aplicação.
 
 - **Exceptions**: Ficarão todas as exceções lançadas pelos nossos casos de uso.
 
