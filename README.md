@@ -2,7 +2,7 @@
 
 Este projeto aborda exclusivamente a organização de arquivos seguindo a estrutura da Arquitetura Limpa como modelo para outros projetos. Vou explicar por que escolhi definir neste modelo. É apenas uma representação da estrutura (sem código).
 
-![clean_archi](/imagens/Screenshot_148.png)
+![clean_archi](/imagens/Screenshot_169.png)
 
 ## Regras e Fluxos Básicos
 
