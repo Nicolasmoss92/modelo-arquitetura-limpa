@@ -30,10 +30,9 @@ A nossa organização será feita de modo que as camadas mais externas não seja
 
    Obs: Um caso de uso pode ser chamado pelo outro?
 
-    Importante analisar a complexidade que vai criar para nosso metodo. Uma abordagem interessante é a gente criar um controller e chamar os casos de usos de maneira independente. Um da cada vez executando tudo que percisamos.
+    É importante analisar a complexidade que isso criará para o nosso método. Uma abordagem interessante é criar um controlador e chamar os casos de uso de maneira independente, um de cada vez, executando tudo o que precisamos.
 
-    Para os casos em que nosso sistema usa repetida vezes o mesmo codigo em varias partes, como por exemplo um log. Não temos por que ficar repetindo codigo se ele executa extamante a mesma coisa.
-    Podemos cria uma um Service, que fique responsavel por gerenciar esse comportamente e reutiliza-lo nso lugares que precisamos.
+    Para os casos em que nosso sistema usa repetidamente o mesmo código em várias partes, como por exemplo um log, não temos por que ficar repetindo o código se ele executa exatamente a mesma coisa. Podemos criar um serviço que seja responsável por gerenciar esse comportamento e reutilizá-lo nos lugares em que precisamos
 
 - **Exceptions**: Ficarão todas as exceções lançadas pelos nossos casos de uso.
 
