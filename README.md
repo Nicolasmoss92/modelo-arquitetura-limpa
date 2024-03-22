@@ -70,6 +70,7 @@ Observação: Cada design pode conter uma organização em relação a alguns it
 
 Ao implementar uma aplicação, pense nas suas Entidades, que são classes que armazenam principalmente dados e que poderão ser reusadas em outros sistemas que você vai construir no futuro. Depois, pense nos Casos de Uso, que vão implementar regras de negócio relacionadas com as Entidades de seu sistema. Mas torne as classes que representam Entidades e Casos de Uso limpas de qualquer tecnologia. Lembre-se a Web é um detalhe; o banco de dados é um detalhe. Por fim, pense nas classes Adaptadoras, que vão funcionar como tradutores que viabilizam a comunicação entre as classes internas e o mundo externo.
 
+No entanto, independentemente da arquitetura escolhida, é importante que se concentrar em separar as preocupações, na independência de frameworks, na testabilidade e na flexibilidade.
 
 ## Análise da Estrutura de Pastas e Design de Domínio Dirigido (DDD)
 
