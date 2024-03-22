@@ -36,6 +36,8 @@ A nossa organização será feita de modo que as camadas mais externas não seja
 
     - Integrações, mas acredito que para o nosso modelo de organização arquitetural esse caso não se aplica, mas em outro design é uma abordagem interessante.
 
+    - Importante analisar a complexidade que ira criar dentro no nosso metodo que esta incorporando outro use case (processamento).
+
 - **Exceptions**: Ficarão todas as exceções lançadas pelos nossos casos de uso.
 
 - **Value Objects**: Ficará toda a validação de objetos.
